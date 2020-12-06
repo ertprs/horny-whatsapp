@@ -14,9 +14,9 @@ export default class CommandsLoader {
             if (error) {
                 console.error(error);
             } else {
-                console.log(`[${categories.length}] Category loaded.`);
+                console.log(`[${categories.length}] memuat categories.`);
                 categories.forEach(category => {
-                    console.log(`[${category}] Loaded..`);
+                    console.log(`[${category}] memuat.`);
                     let module: Category = require(`${path}/${category}/module.json`);
                     module.cmds = [];
                     this.helps.set(category, module);
@@ -24,10 +24,10 @@ export default class CommandsLoader {
                         if (err) {
                             console.error(err);
                         } else {
-                            console.log(`[${files.length - 1}] Loaded...`);
+                            console.log(`[${files.length - 1}] memuat commands.`);
                             files.filter(fl => fl.endsWith(".js")).forEach(file => {
                                 const prop: Command = new (require(`${path}/${category}/${file}`).default)(this.client);
-                                console.info(`[${prop.name}] Loaded..`);
+                                console.info(`[${prop.name}] memuat command.`);
                                 this.commands.set(prop.name, prop);
                                 prop.aliases!.forEach(alias => {
                                     this.aliases.set(alias, prop.name);

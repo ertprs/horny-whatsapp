@@ -4,6 +4,10 @@ import type HornyClient from "../../classes/HornyClient";
 
 export default class HelpCommand implements Event {
     readonly name = "help";
+    readonly description = "Menyediakan informasi command yang dipunya oleh bot.";
+    readonly aliases = ["h", "halp"];
+    readonly groupOnly = true;
+    
     constructor(private client: HornyClient) {}
     
     public async execute(message: Message, args?: string[]) {

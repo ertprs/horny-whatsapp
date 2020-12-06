@@ -1,0 +1,6 @@
+# Big size
+node_modules/
+dist/
+
+# Package Lock JSON
+package-lock.json

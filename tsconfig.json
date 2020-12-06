@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "strict": true,
+        "module": "CommonJS",
+        "target": "ES6",
+        "outDir": "./dist",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "alwaysStrict": true,
+        "pretty": true
+    },
+}

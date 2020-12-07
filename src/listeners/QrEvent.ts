@@ -1,4 +1,4 @@
-import type { Event } from "../@typings/Event";
+import type { Event } from "../@typings";
 import type HornyClient from "../classes/HornyClient";
 
 export default class QrEvent implements Event {

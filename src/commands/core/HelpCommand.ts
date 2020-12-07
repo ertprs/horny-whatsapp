@@ -1,8 +1,8 @@
 import type { Message } from "whatsapp-web.js";
-import type { Event } from "../../@typings/Event";
+import type { Command } from "../../@typings";
 import type HornyClient from "../../classes/HornyClient";
 
-export default class HelpCommand implements Event {
+export default class HelpCommand implements Command {
     readonly name = "help";
     readonly description = "Menyediakan informasi command yang dipunya oleh bot.";
     readonly aliases = ["h", "halp"];

@@ -1,5 +1,5 @@
 import type { Message } from "whatsapp-web.js";
-import type { Event } from "../@typings/Event";
+import type { Event } from "../@typings";
 import CommandHandler from "../classes/CommandHandler";
 import HornyClient from "../classes/HornyClient";
 
